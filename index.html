@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/37825aa95b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/title.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist and ML Engineer</p>
+                <h1>Hi, I'm <span>Shashank</span> Shrivastava</h1>
+            </div>
+        </div>
+    </div>
+<!-------------------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/icon.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p style="font-size: 20px;line-height: 25px;">I am a student passionate about learning and exploring new opportunities. With a strong interest in Data Science and technology, I actively build my skills through academic and independent projects. My dedication to growth and innovation positions me for future success.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" style="font-size: 17px;">
+                        <ul>
+                            <li><span style="font-size: 15px">Data Scientist</span><br>Playing with Data</li>
+                            <li><span style="font-size: 15px">ML Engineer</span><br>Talking to Machines</li>
+                            <li><span style="font-size: 15px">Web Developer</span><br>Creating Web Art</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications" style="font-size: 17px;">
+                        <ul>
+                            <li><span style="font-size: 15px">Coursera</span> - Introduction to Hardware and Operating System</li>
+                            <li><span style="font-size: 15px">Devtown</span> - Amazon clone using HTML, CSS and JS</li>
+                            <li><span style="font-size: 15px">IamNeo</span> - Computer Programming</li>
+                            <li><span style="font-size: 15px">BoardInfinity</span> - Data Structures and Algorithm</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education" style="font-size: 17px;">
+                        <ul>
+                            <li><span style="font-size: 15px"><pre>2023 - Present                                                                                               7.8/10</pre></span><br>B.Tech CSE(Data Science and ML)<br>LPU, Phagwara</li>
+                            <li><span style="font-size: 15px"><pre>2023                                                                                                                   74%</pre></span><br>Higher Secondary<br>The Air Force School, Subroto Park</li>
+                            <li><span style="font-size: 15px"><pre>2021                                                                                                                   88%</pre></span><br>Senior Secondary<br>The Air Force School, Subroto Park</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-duotone fa-solid fa-database"></i>
+                    <h2>Data Scientist</h2>
+                    <p style="font-size: 17px;">Collecting, managing and analysing Data using excel and tableau.</p>
+                    <a href="https://www.linkedin.com/in/shashankshri/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-sliders"></i>
+                    <h2>Machine Learning Engineer</h2>
+                    <p style="font-size: 17px;">Machine Learning and real-time testing to make the technology more efficient.</p>
+                    <a href="https://www.linkedin.com/in/shashankshri/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Designer</h2>
+                    <p style="font-size: 17px;">Designing web applications, with majesticity!!</p>
+                    <a href="https://www.linkedin.com/in/shashankshri/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------My Works------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/game.jpg">
+                    <div class="layer">
+                        <h3>Rock-Paper-Scissor</h3>
+                        <p>This is the traditional Rock-Paper-Scissor game but, in new generation. Made by tech, defeated by None</p>
+                        <a href="https://github.com/Shri985/Rock-Paper-Scissor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Weather.io.png">
+                    <div class="layer">
+                        <h3>Weather.io</h3>
+                        <p>Weather detection app created using API. Easy to handle, easiest to gain knowledge.</p>
+                        <a href="https://github.com/Shri985/Weather.io"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/BlogIt.png">
+                    <div class="layer">
+                        <h3>BlogIt</h3>
+                        <p>Blogging platform for travel enthusiasts. Gather information for where, when and how to go to your dream destination.</p>
+                        <a href="https://github.com/Shri985/BlogIt"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Shri985" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>shashank.shri985@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7096909765</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/shashnc_985/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shashankshri/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/917096909765"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="My Resume.pdf" download class="btn btn2">Download Resume<i style="font-size: 20px;margin-left: 20px;" class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email address" required>
+                        <textarea name="Message" rows="6" placeholder="Type your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> <span style="color:yellowgreen">Shri</span>. Made with <i class="fa-regular fa-heart"></i> and Code.</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzhzkCHmm3MGddRaDHFqzVyEGlsVnQ11gvkzE66Nv3PnFi2S1NC9Pa0UfSi_g_W4cs/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully !"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
